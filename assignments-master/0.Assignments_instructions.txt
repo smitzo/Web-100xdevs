@@ -1,0 +1,6 @@
+go to https://github.com/100xdevs-cohort-2/assignments and download zip file
+npm install
+chabge directory from terminal cd 01-js or cd week-1 or cd week-2 ....
+go to question.js example : anagram.js file and write solution inside it 
+run npx jest ./tests/anagram.test.js    (use tab key to autocomplete)
+if youve solved all questions in a sub folder run npx jest ./tests/ 
