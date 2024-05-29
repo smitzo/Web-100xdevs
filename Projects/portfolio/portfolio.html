@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viha Shah - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #160021;
+          
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #2b0347;
+           
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+           
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(33, 20, 32, 0.8);
+            
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.5s;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ceec3b;
+            
+            border-bottom: 2px solid #c3e04f;
+            
+        }
+
+        .logo {
+            width: 24px;
+            
+            height: auto;
+            margin-right: 5px;
+           
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            padding-top: 120px;
+            
+        }
+
+        
+        section {
+            margin: 2rem 0;
+        }
+
+        section h2 {
+            color: #a853b0;
+           
+            border-bottom: 2px solid #dc81c2;
+           
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 1rem;
+        }
+
+        
+        .blue-underline {
+            color: #870b60;
+            
+        }
+
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                padding: 0.5rem 0.75rem;
+                margin: 0.5rem 0;
+               
+            }
+
+            header h1 {
+                font-size: 2rem;
+                
+            }
+
+            .container {
+                padding: 0 1rem;
+                padding-top: 150px;
+                
+            }
+        }
+
+      
+        footer {
+            background-color: #c7abd0;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer nav a:hover {
+            color: #ceec3b;
+            /* Blue */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Viha Shah</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#activities">Activities</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>About Me</h2>
+                <p><strong>🌟 Hi, I'm Viha Shah, an aspiring IT professional currently pursuing my Bachelor's degree in
+                        Information
+                        Technology. I have a keen interest in data science, machine learning, and software
+                        development.</strong></p>
+            </div>
+        </section>
+        <section id="education">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>🌟 G H Patel College of Engineering and Technology (GCET), Anand, India</strong>
+                        <br>
+                        Bachelor's degree in Information Technology | CGPA: 7.85 (Till 5th sem)
+                    </li>
+                    <li>
+                        <strong>🌟 Kasturba Kanya Vidyalaya, Anand, India</strong> (2020-2021)<br>
+                        HSC, Percentage: 82.0%
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong class="blue-underline">🌟 Languages:</strong> Python, Java, JavaScript, C++, SQL, C</li>
+                    <li><strong class="blue-underline">🌟 Technologies and Frameworks:</strong> TensorFlow, Pandas,
+                        Scikit-learn</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>Internship Experience</h2>
+                <ul>
+                    <li>
+                        <strong class="blue-underline">🌟 Data Science Internship at Code Clause</strong> (Dec’23 -
+                        Jan’24)<br>
+                        <ul>
+                            <li>Personalized Music recommendation: Used CNN model and integrated OpenCV functions for
+                                image processing for Emotion Detection.</li>
+                            <li>After Emotion Detection, the music playback is accessed through Audio library.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <strong class="blue-underline">🌟 Body Parts Game :</strong><br>
+                        Computer-vision based game to help children with ASD (autism spectrum disorder) to enhance the
+                        hand-eye coordination of Autistic children.
+                    </li>
+                    <li>
+                        <strong class="blue-underline">🌟 Image Caption Generator : </strong><br>
+                        Implemented start and end sequences for caption clarity. Developed an LSTM model for accurate
+                        caption generation. Evaluated model performance using BLEU scores for caption quality
+                        assessment.
+                    </li>
+                    <li>
+                        <strong class="blue-underline">🌟 WhatsApp Chat Analysis : </strong><br>
+                        Analyzed WhatsApp chat data to extract insights using data transformation and visualization
+                        techniques to reveal message trends over time. Identified peak engagement hours and chat
+                        behavior patterns. Visualized top emojis and user activity and generated heatmaps to uncover
+                        messaging activity patterns.
+                    </li>
+                    <li>
+                        <strong class="blue-underline">🌟 Movie Recommendation System : </strong><br>
+                        Implemented Content based filtering approach. Extracted essential movie information for analysis
+                        and prepared data for analysis by tokenizing. Used text Vectorization for processing text data.
+                        Calculated movie similarities to make accurate recommendations.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="activities">
+            <div class="card animate_animated animate_fadeInUp">
+                <h2>Academic and Extracurricular Activities</h2>
+                <ul>
+                    <li><strong>🌟 Recognized as LinkedIn's Top Data Analytics Voice by engaging in
+                            collaborative articles, sharing
+                            perspectives and making a meaningful impact.</strong></li>
+                    <li><strong>🌟 Best Research Paper award at International Conference.</strong>
+                    </li>
+                    <li><strong>🌟 Finalist at CVM UNIVERSITY Hackathon 2024.</strong></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <nav>
+            <a href="https://github.com/VihaShahh" target="_blank" rel="noopener noreferrer"><img
+                    src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" class="logo"></a>
+            <a href="https://x.com/vihashah1103" target="_blank" rel="noopener noreferrer"><img
+                    src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter" class="logo"></a>
+            <a href="https://www.linkedin.com/in/vihashah" target="_blank" rel="noopener noreferrer"><img
+                    src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" class="logo"></a>
+            <a href="https://www.youtube.com/@vihashah872" target="_blank" rel="noopener noreferrer"><img
+                    src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube" class="logo"></a>
+            <a href="mailto:vihashah1103@gmail.com" target="_blank" rel="noopener noreferrer"><img
+                    src="https://img.icons8.com/fluent/48/000000/gmail--v2.png" alt="Email" class="logo"></a>
+        </nav>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('section');
+
+            function setActiveLink() {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navLinks.forEach((link) => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+
+            
+            function scrollToSection(id) {
+                const section = document.getElementById(id);
+                const yOffset = -120; 
+
+                window.scrollTo({
+                    top: section.offsetTop + yOffset,
+                    behavior: 'smooth'
+                });
+            }
+
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); 
+
+                   
+                    const href = this.getAttribute('href').substring(1);
+
+                    
+                    scrollToSection(href);
+                });
+            });
+
+            
+            setActiveLink();
+            window.addEventListener('scroll', setActiveLink);
+        });
+    </script>
+
+</body>
+
+</html>

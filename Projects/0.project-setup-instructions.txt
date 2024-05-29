@@ -8,5 +8,5 @@
 5. then in terminal in the folder (E:\Computer Science\Web Dev\Projects\react-counter) ,
 6.run npm install and run npm install prop-types
 
-7.run npm run dev 
- or run npm run build (builds a dist folder that can be hosted on aws directly )
+7.run npm run dev while you are developing the project
+ or run npm run build (when you have completed the project builds a dist folder that can be hosted on aws directly )

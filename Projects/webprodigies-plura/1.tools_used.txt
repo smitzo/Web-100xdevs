@@ -1,0 +1,2 @@
+upload thing for uploading images videos data
+shadcn ui for copy paste ui

@@ -1,0 +1,8 @@
+npm create vite@latest
+give project name comedyforest
+npm install 
+cd comedyforest
+npm start
+npm run dev
+npm add react-router-dom
+npm add styled-components

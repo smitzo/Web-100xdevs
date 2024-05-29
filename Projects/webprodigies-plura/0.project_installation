@@ -1,0 +1,59 @@
+create folder webprodigies-plura
+open the folder in terminal
+npm install -g bun
+bun create next-app@latest .
+yes yes yes yes yes no
+
+from https://github.com/webprodigies/plura-production/blob/main/.env.example copy the env file into webprodigies-plura>src>.env
+
+go to uploadthing , create an app . copy the api keys into uploadthing secret variable in the .env file 
+
+go to https://ui.shadcn.com/docs/installation
+ for bun  run command:  bunx --bun shadcn-ui init then 
+ bun shadcn-ui add > select all buttons 
+
+install mysql 
+create a new connection named plura
+set password Smit@2812
+
+in .env LOCAL_DATABASE_URL put :"mysql://root:Smit@2812@localhost:3306/plura"
+
+go to next.config and from https://github.com/webprodigies/plura-production/blob/main/next.config.js copy and paste :
+const nextConfig = {
+    images: {
+        domains: [
+          'uploadthing.com',
+          'utfs.io',
+          'img.clerk.com',
+          'subdomain',
+          'files.stripe.com',
+        ],
+      },
+};
+
+go to https://clerk.com make app names plura
+copy the api key and paste into .env file variable  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_c2FmZS1kb2Jlcm1hbi03Ny5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_6XhmP2Em4DIpuHT46uY3cX2sKC8Ww6SPDapsmwPZeB
+
+in terminal run bun add @clerk/themes
+
+in terminal run bun add uploadthing @uploadthing/react
+
+copy tailwind config.js from https://github.com/webprodigies/plura-production/blob/main/tailwind.config.ts into
+ tailwind.config.ts 
+
+
+in gitignore under miscellaneous enter ".env" so that it hides the env file
+
+in terminal run bun add @clerk/nextjs
+
+copy global.css from https://github.com/webprodigies/plura-production/blob/main/src/app/globals.css into webprodigies-plura\src\app\globals.css
+
+in app/layout.tsx import ClerkProvider from '@clerk/nextjs'
+ edit return (
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ClerkProvider>
+  );

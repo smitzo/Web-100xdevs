@@ -10,6 +10,11 @@ app.get('/',function(req,res){
     //console.log(req.headers.authorization)
     res.status(401).send("Hello World!")
 })
+// OR
+// app.get('/',(req,res)=>{
+//     //console.log(req.headers.authorization)
+//     res.status(401).send("Hello World!")
+// })
 
 
 app.get("/route-handler",function(req,res){
